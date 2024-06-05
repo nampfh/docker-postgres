@@ -3,5 +3,5 @@ FROM postgres:14.1
 
 # Set environment variables
 ENV POSTGRES_DB ehealth
-ENV POSTGRES_USER famiy
+ENV POSTGRES_USER family
 ENV POSTGRES_PASSWORD family@2024
