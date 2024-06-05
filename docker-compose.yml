@@ -10,3 +10,16 @@ services:
     ports:
       - "5432:5432"
     restart: always
+
+  pgadmin:
+    image: dpage/pgadmin4:8.7
+    container_name: family-pgadmin4
+    ports:
+      - "80:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: application@familyhospital.vn
+      PGADMIN_DEFAULT_PASSWORD: family@2024
+    restart: always
+    tty: true
+    depends_on:
+      - family-postgres
