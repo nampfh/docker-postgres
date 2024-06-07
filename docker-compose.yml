@@ -17,8 +17,9 @@ services:
     ports:
       - "80:80"
     environment:
+      PGADMIN_DEFAULT_USER: family
       PGADMIN_DEFAULT_EMAIL: application@familyhospital.vn
-      PGADMIN_DEFAULT_PASSWORD: family@2024
+      PGADMIN_DEFAULT_PASSWORD: family
     restart: always
     tty: true
     depends_on:
